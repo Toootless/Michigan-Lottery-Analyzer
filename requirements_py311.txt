@@ -1,0 +1,37 @@
+# Requirements for Python 3.11 with CUDA Support
+# Lottery Analyzer - Complete Package List
+
+# Core Web Framework
+streamlit>=1.40.0
+
+# Data Analysis and Visualization
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.6.0
+plotly>=5.17.0
+seaborn>=0.12.0
+
+# Web Scraping and Data Collection
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+
+# Machine Learning (Compatible with Python 3.11)
+scikit-learn>=1.3.0
+
+# AI/ML Libraries for Local LLM (Python 3.11 Compatible)
+transformers>=4.30.0
+accelerate>=0.20.0
+safetensors>=0.4.0
+
+# Additional Utilities
+tqdm>=4.65.0
+tokenizers>=0.13.0
+huggingface-hub>=0.16.0
+
+# Optional: For advanced features
+psutil>=5.9.0  # System monitoring
+pyyaml>=6.0    # Configuration files
+
+# Note: PyTorch should be installed separately with CUDA support:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118

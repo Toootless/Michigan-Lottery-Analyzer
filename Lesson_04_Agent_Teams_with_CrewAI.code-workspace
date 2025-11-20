@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../Lesson_04_Agent_Teams_with_CrewAI"
+		},
+		{
+			"path": "../Lesson_03_Multi-Agent_Systems_with_AutoGen"
+		}
+	],
+	"settings": {
+		"python-envs.defaultEnvManager": "ms-python.python:system",
+		"python-envs.defaultPackageManager": "ms-python.python:pip",
+		"python-envs.pythonProjects": [
+			{
+				"path": "New Demo Codes/Demo 1.py",
+				"envManager": "ms-python.python:system",
+				"packageManager": "ms-python.python:pip"
+			}
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "pattern_weights": {
+    "consecutive_pairs": 1.0,
+    "odd_even_patterns": 1.0,
+    "sum_ranges": 1.0,
+    "high_low_patterns": 1.0,
+    "number_relationships": 1.0
+  },
+  "strategy_weights": {
+    "balanced_mix": 1.4000000000000004,
+    "hot_focus": 2.0,
+    "cold_theory": 0.1,
+    "consecutive_pattern": 0.1,
+    "sum_optimized": 0.1,
+    "odd_even_balanced": 0.1,
+    "relationship_based": 2.0
+  },
+  "adaptation_rate": 0.1,
+  "last_updated": "2025-11-20T13:44:03.295669"
+}

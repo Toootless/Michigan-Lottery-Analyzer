@@ -1,0 +1,83 @@
+{
+  "application": {
+    "name": "Michigan Lottery Analyzer",
+    "version": "2.3.0",
+    "release_date": "2025-10-30",
+    "status": "Production Ready"
+  },
+  "features": {
+    "purchase_integration": {
+      "enabled": true,
+      "online_games": [
+        "Powerball",
+        "Mega Millions", 
+        "Fantasy 5",
+        "Lucky for Life",
+        "Lotto 47"
+      ],
+      "retailer_only_games": [
+        "Daily 3",
+        "Daily 4",
+        "Daily 3 Midday",
+        "Daily 3 Evening", 
+        "Daily 4 Midday",
+        "Daily 4 Evening"
+      ]
+    },
+    "ai_learning": {
+      "enabled": true,
+      "learning_rate": 0.3,
+      "max_weight": 2.0,
+      "min_weight": 0.5
+    },
+    "web_scraping": {
+      "enabled": true,
+      "rate_limit": {
+        "calls": 10,
+        "period": 60
+      },
+      "timeout": 30
+    }
+  },
+  "data_sources": {
+    "primary": {
+      "type": "csv",
+      "location": "data/final_integrated_data/",
+      "priority": 1
+    },
+    "secondary": {
+      "type": "web_scraping",
+      "base_url": "https://www.michiganlottery.com",
+      "priority": 2
+    },
+    "tertiary": {
+      "type": "sample_generation",
+      "priority": 3
+    }
+  },
+  "ui_settings": {
+    "theme": "default",
+    "layout": "wide",
+    "tabs": 8,
+    "responsive": true
+  },
+  "performance": {
+    "cache_ttl": 3600,
+    "memory_limit": "500MB",
+    "max_analysis_days": 365
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/lottery_analyzer.log",
+    "max_size": "10MB",
+    "backup_count": 5
+  },
+  "security": {
+    "input_validation": true,
+    "https_only": true,
+    "allowed_domains": [
+      "michiganlottery.com",
+      "www.michiganlottery.com"
+    ]
+  }
+}

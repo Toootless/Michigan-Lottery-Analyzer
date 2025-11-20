@@ -1,0 +1,28 @@
+[project]
+name = "lottery-ai-workbench"
+version = "0.1.0"
+description = "Starter AI analytics workbench for lottery pattern exploration using Streamlit"
+authors = [ { name = "Your Name", email = "you@example.com" } ]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = [
+  "streamlit>=1.40.0",
+  "pandas>=2.0.0",
+  "numpy>=1.24.0",
+  "scikit-learn>=1.2.0",
+  "plotly>=5.17.0",
+  "requests>=2.31.0",
+  "pydantic>=2.5.0",
+  "openai>=1.0.0",
+  "python-dotenv>=1.0.0"
+]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"

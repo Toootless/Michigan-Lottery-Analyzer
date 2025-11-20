@@ -1,0 +1,1596 @@
+{
+  "predictions": [
+    {
+      "id": "e3db4db0",
+      "timestamp": "2025-10-30T18:51:00.496974",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            5,
+            37,
+            39,
+            64,
+            68
+          ],
+          "bonus": 15,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            20,
+            23,
+            29,
+            38,
+            41
+          ],
+          "bonus": 15,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            18,
+            26,
+            47,
+            52,
+            66
+          ],
+          "bonus": 15,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            14,
+            27,
+            35,
+            44,
+            61
+          ],
+          "bonus": 15,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            11,
+            12,
+            20,
+            63,
+            64
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 3
+        },
+        "sum_optimized": {
+          "numbers": [
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 180-189",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 3
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            5,
+            12,
+            48,
+            58,
+            65
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 2O-3E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 3
+        },
+        "relationship_based": {
+          "numbers": [
+            18,
+            29,
+            42,
+            50,
+            53
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 3
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            3,
+            300
+          ],
+          [
+            59,
+            299
+          ],
+          [
+            50,
+            296
+          ],
+          [
+            34,
+            293
+          ],
+          [
+            66,
+            292
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "73fa823a",
+      "timestamp": "2025-10-30T18:52:46.449487",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            1,
+            6,
+            41,
+            60,
+            64
+          ],
+          "bonus": 2,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            4,
+            10,
+            27,
+            31,
+            45
+          ],
+          "bonus": 2,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            19,
+            31,
+            33,
+            42,
+            60
+          ],
+          "bonus": 2,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            12,
+            15,
+            21,
+            34,
+            60
+          ],
+          "bonus": 2,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            23,
+            24,
+            38,
+            55,
+            56
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        },
+        "sum_optimized": {
+          "numbers": [
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 160-169",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            9,
+            34,
+            42,
+            45,
+            49
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 3O-2E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        },
+        "relationship_based": {
+          "numbers": [
+            10,
+            15,
+            35,
+            64,
+            69
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            68,
+            314
+          ],
+          [
+            64,
+            293
+          ],
+          [
+            12,
+            293
+          ],
+          [
+            59,
+            291
+          ],
+          [
+            34,
+            290
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "e9c301af",
+      "timestamp": "2025-10-30T19:08:22.643119",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            8,
+            24,
+            29,
+            53,
+            68
+          ],
+          "bonus": 18,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            6,
+            41,
+            43,
+            46,
+            53
+          ],
+          "bonus": 18,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            24,
+            37,
+            39,
+            41,
+            48
+          ],
+          "bonus": 18,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            2,
+            24,
+            33,
+            37,
+            44
+          ],
+          "bonus": 18,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            18,
+            19,
+            25,
+            32,
+            33
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 6
+        },
+        "sum_optimized": {
+          "numbers": [
+            31,
+            32,
+            33,
+            34,
+            35
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 160-169",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 6
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            6,
+            21,
+            23,
+            36,
+            63
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 3O-2E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 6
+        },
+        "relationship_based": {
+          "numbers": [
+            16,
+            50,
+            51,
+            56,
+            66
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 6
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            43,
+            294
+          ],
+          [
+            29,
+            293
+          ],
+          [
+            51,
+            291
+          ],
+          [
+            45,
+            291
+          ],
+          [
+            56,
+            288
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "05c491ac",
+      "timestamp": "2025-10-30T19:10:36.867443",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            21,
+            26,
+            43,
+            61,
+            67
+          ],
+          "bonus": 11,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            23,
+            24,
+            26,
+            36,
+            55
+          ],
+          "bonus": 11,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            4,
+            10,
+            16,
+            39,
+            57
+          ],
+          "bonus": 11,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            18,
+            44,
+            48,
+            57,
+            60
+          ],
+          "bonus": 11,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            16,
+            17,
+            35,
+            36,
+            43
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 20
+        },
+        "sum_optimized": {
+          "numbers": [
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 170-179",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 20
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            2,
+            23,
+            32,
+            51,
+            65
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 3O-2E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 20
+        },
+        "relationship_based": {
+          "numbers": [
+            6,
+            21,
+            29,
+            33,
+            35
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 20
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            47,
+            292
+          ],
+          [
+            33,
+            286
+          ],
+          [
+            38,
+            284
+          ],
+          [
+            35,
+            283
+          ],
+          [
+            30,
+            282
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "7e1d870b",
+      "timestamp": "2025-10-30T19:15:51.430342",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            3,
+            37,
+            41,
+            45,
+            68
+          ],
+          "bonus": 25,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            6,
+            13,
+            16,
+            19,
+            48
+          ],
+          "bonus": 25,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            5,
+            33,
+            46,
+            52,
+            59
+          ],
+          "bonus": 25,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            2,
+            29,
+            41,
+            47,
+            59
+          ],
+          "bonus": 25,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            21,
+            35,
+            36,
+            63,
+            64
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 15
+        },
+        "sum_optimized": {
+          "numbers": [
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 170-179",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 15
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            38,
+            40,
+            53,
+            54,
+            59
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 2O-3E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 15
+        },
+        "relationship_based": {
+          "numbers": [
+            7,
+            22,
+            29,
+            35,
+            66
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 15
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            45,
+            310
+          ],
+          [
+            28,
+            298
+          ],
+          [
+            22,
+            297
+          ],
+          [
+            48,
+            297
+          ],
+          [
+            7,
+            294
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "962c12c4",
+      "timestamp": "2025-10-30T19:16:35.177269",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            8,
+            27,
+            35,
+            61,
+            67
+          ],
+          "bonus": 4,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            7,
+            47,
+            49,
+            52,
+            65
+          ],
+          "bonus": 4,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            30,
+            39,
+            40,
+            45,
+            62
+          ],
+          "bonus": 4,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            12,
+            18,
+            19,
+            34,
+            62
+          ],
+          "bonus": 4,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            1,
+            2,
+            25,
+            26,
+            47
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 14
+        },
+        "sum_optimized": {
+          "numbers": [
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 180-189",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 14
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            11,
+            20,
+            41,
+            45,
+            60
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 3O-2E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 14
+        },
+        "relationship_based": {
+          "numbers": [
+            10,
+            26,
+            35,
+            37,
+            50
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 14
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            1,
+            295
+          ],
+          [
+            35,
+            293
+          ],
+          [
+            15,
+            292
+          ],
+          [
+            23,
+            291
+          ],
+          [
+            50,
+            291
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "1249eb48",
+      "timestamp": "2025-10-30T19:21:14.916722",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            6,
+            17,
+            49,
+            52,
+            65
+          ],
+          "bonus": 26,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            8,
+            13,
+            54,
+            60,
+            67
+          ],
+          "bonus": 26,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            20,
+            31,
+            40,
+            49,
+            58
+          ],
+          "bonus": 26,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            12,
+            30,
+            40,
+            51,
+            53
+          ],
+          "bonus": 26,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            23,
+            24,
+            65,
+            67,
+            68
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 18
+        },
+        "sum_optimized": {
+          "numbers": [
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 170-179",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 18
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            6,
+            30,
+            40,
+            47,
+            51
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 2O-3E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 18
+        },
+        "relationship_based": {
+          "numbers": [
+            32,
+            38,
+            41,
+            56,
+            57
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 18
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            23,
+            305
+          ],
+          [
+            53,
+            295
+          ],
+          [
+            38,
+            293
+          ],
+          [
+            29,
+            292
+          ],
+          [
+            56,
+            292
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "a5c630d0",
+      "timestamp": "2025-10-30T19:25:21.759318",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            16,
+            22,
+            23,
+            24,
+            32
+          ],
+          "bonus": 24,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            6,
+            28,
+            43,
+            44,
+            52
+          ],
+          "bonus": 24,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            10,
+            14,
+            20,
+            22,
+            24
+          ],
+          "bonus": 24,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            5,
+            32,
+            33,
+            52,
+            54
+          ],
+          "bonus": 24,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            13,
+            35,
+            36,
+            66,
+            67
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        },
+        "sum_optimized": {
+          "numbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 0-9",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            1,
+            4,
+            39,
+            64,
+            68
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 2O-3E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        },
+        "relationship_based": {
+          "numbers": [
+            5,
+            30,
+            62,
+            66,
+            67
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 1
+        }
+      },
+      "analysis_context": {
+        "total_draws": 198,
+        "hot_numbers": [
+          6,
+          12,
+          16,
+          23,
+          28,
+          29,
+          32,
+          35,
+          40,
+          43,
+          44,
+          52,
+          53,
+          61,
+          62,
+          64,
+          67
+        ],
+        "cold_numbers": [
+          2,
+          5,
+          9,
+          10,
+          14,
+          19,
+          20,
+          22,
+          24,
+          25,
+          26,
+          30,
+          36,
+          38,
+          39,
+          41,
+          42,
+          46,
+          51,
+          55,
+          56,
+          57,
+          59,
+          63,
+          65,
+          68
+        ],
+        "most_common": [
+          [
+            23,
+            20
+          ],
+          [
+            28,
+            19
+          ],
+          [
+            52,
+            18
+          ],
+          [
+            43,
+            16
+          ],
+          [
+            12,
+            15
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "11f95aea",
+      "timestamp": "2025-10-30T19:26:21.633618",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            12,
+            21,
+            38,
+            57,
+            64
+          ],
+          "bonus": 23,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            4,
+            29,
+            34,
+            41,
+            52
+          ],
+          "bonus": 23,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            9,
+            16,
+            29,
+            57,
+            60
+          ],
+          "bonus": 23,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            23,
+            40,
+            41,
+            58,
+            62
+          ],
+          "bonus": 23,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            29,
+            30,
+            47,
+            48,
+            65
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 12
+        },
+        "sum_optimized": {
+          "numbers": [
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 170-179",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 12
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            4,
+            6,
+            11,
+            53,
+            55
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 3O-2E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 12
+        },
+        "relationship_based": {
+          "numbers": [
+            29,
+            30,
+            42,
+            50,
+            57
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 12
+        }
+      },
+      "analysis_context": {
+        "total_draws": 3650,
+        "hot_numbers": [],
+        "cold_numbers": [],
+        "most_common": [
+          [
+            48,
+            309
+          ],
+          [
+            31,
+            295
+          ],
+          [
+            65,
+            294
+          ],
+          [
+            53,
+            293
+          ],
+          [
+            66,
+            288
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    },
+    {
+      "id": "b8ff3048",
+      "timestamp": "2025-10-30T19:27:20.550019",
+      "date": "2025-10-30",
+      "game": "Powerball",
+      "predictions": {
+        "balanced_mix": {
+          "numbers": [
+            19,
+            20,
+            23,
+            28,
+            40
+          ],
+          "bonus": 1,
+          "strategy": "Balanced Mix",
+          "description": "Combines hot numbers, cold numbers, and medium frequency numbers for balance",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "hot_focus": {
+          "numbers": [
+            16,
+            35,
+            40,
+            52,
+            62
+          ],
+          "bonus": 1,
+          "strategy": "Hot Numbers Focus",
+          "description": "Emphasizes frequently drawn numbers based on recent patterns",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "cold_theory": {
+          "numbers": [
+            2,
+            20,
+            22,
+            36,
+            38
+          ],
+          "bonus": 1,
+          "strategy": "Due Theory",
+          "description": "Focuses on \"due\" numbers that haven't appeared recently",
+          "confidence": "Medium",
+          "weight": 1.0
+        },
+        "random_statistical": {
+          "numbers": [
+            18,
+            33,
+            48,
+            55,
+            61
+          ],
+          "bonus": 1,
+          "strategy": "Statistical Random",
+          "description": "Mathematically random selection from valid range",
+          "confidence": "Equal",
+          "weight": 1.0
+        },
+        "consecutive_pattern": {
+          "numbers": [
+            13,
+            35,
+            36,
+            66,
+            67
+          ],
+          "strategy": "Consecutive Pattern",
+          "description": "Based on most frequent consecutive number pairs in historical data",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 7
+        },
+        "sum_optimized": {
+          "numbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "strategy": "Sum Optimization",
+          "description": "Targets the most common sum range: 0-9",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 7
+        },
+        "odd_even_balanced": {
+          "numbers": [
+            4,
+            18,
+            33,
+            51,
+            58
+          ],
+          "strategy": "Odd/Even Balance",
+          "description": "Follows most common odd/even pattern: 2O-3E",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 7
+        },
+        "relationship_based": {
+          "numbers": [
+            30,
+            43,
+            62,
+            66,
+            67
+          ],
+          "strategy": "Relationship Pattern",
+          "description": "Based on most frequently paired numbers in historical draws",
+          "confidence": "Medium",
+          "weight": 1.0,
+          "bonus": 7
+        }
+      },
+      "analysis_context": {
+        "total_draws": 198,
+        "hot_numbers": [
+          6,
+          12,
+          16,
+          23,
+          28,
+          29,
+          32,
+          35,
+          40,
+          43,
+          44,
+          52,
+          53,
+          61,
+          62,
+          64,
+          67
+        ],
+        "cold_numbers": [
+          2,
+          5,
+          9,
+          10,
+          14,
+          19,
+          20,
+          22,
+          24,
+          25,
+          26,
+          30,
+          36,
+          38,
+          39,
+          41,
+          42,
+          46,
+          51,
+          55,
+          56,
+          57,
+          59,
+          63,
+          65,
+          68
+        ],
+        "most_common": [
+          [
+            23,
+            20
+          ],
+          [
+            28,
+            19
+          ],
+          [
+            52,
+            18
+          ],
+          [
+            43,
+            16
+          ],
+          [
+            12,
+            15
+          ]
+        ]
+      },
+      "verified": false,
+      "actual_results": null,
+      "performance_scores": null
+    }
+  ],
+  "last_updated": "2025-10-30T19:27:20.550019",
+  "version": "1.0"
+}

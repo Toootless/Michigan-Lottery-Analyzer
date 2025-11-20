@@ -1,0 +1,51 @@
+=== DAILY 3 NUMBER SUGGESTIONS ===
+Generated: 2025-10-27 23:18:19
+Analysis Period: 3650 days
+Game: Daily 3 (Duplicates allowed)
+==================================
+
+Strategy 1: Balanced Mix
+  Numbers: 647
+  Confidence: Medium
+  Weight: 1.00
+  Method: Even distribution across all positions
+
+Strategy 2: Hot Numbers Focus
+  Numbers: 454
+  Confidence: High
+  Weight: 1.20
+  Method: Emphasizes frequently drawn digits
+
+Strategy 3: Due Theory
+  Numbers: 236
+  Confidence: Medium
+  Weight: 0.90
+  Method: Focus on overdue digits
+
+Strategy 4: Repeating Pattern
+  Numbers: 020
+  Confidence: Medium
+  Weight: 1.10
+  Method: Includes duplicate digits (common in daily games)
+
+Strategy 5: Sequential Pattern
+  Numbers: 345
+  Confidence: Low
+  Weight: 0.80
+  Method: Consecutive or wrapped digit sequence
+
+Strategy 6: All Same
+  Numbers: 222
+  Confidence: Very Low
+  Weight: 0.50
+  Method: All positions same digit (2)
+
+Strategy 7: Mixed Frequency
+  Numbers: 307
+  Confidence: Medium
+  Weight: 1.00
+  Method: Alternating hot and cold digits by position
+
+Total Strategies: 7
+Digit Range: 0-9 (each position independent)
+==================================

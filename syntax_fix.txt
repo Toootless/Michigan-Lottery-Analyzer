@@ -1,0 +1,7 @@
+# Fix for the tabs line in main_simple.py
+# Replace line 1479 with:
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["📈 Analysis", "📊 Visualization", "🎯 Number Suggestions", "🧠 Learning Dashboard", "🤖 Chat"])
+
+# Then add a new line before "with tab1:"
+
+# This fixes the syntax error where the statements are not properly separated

@@ -1,0 +1,1654 @@
+{
+  "strategy_performance": {
+    "Powerball": {
+      "balanced_mix": {
+        "total_predictions": 58,
+        "total_accuracy": 360.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          0.0,
+          20.0,
+          20.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 58,
+        "total_accuracy": 480.0,
+        "best_accuracy": 60.0,
+        "recent_accuracy": [
+          20.0,
+          60.0,
+          40.0,
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 58,
+        "total_accuracy": 300.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          20.0,
+          0.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 58,
+        "total_accuracy": 360.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          20.0,
+          0.0,
+          20.0,
+          0.0,
+          20.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 57,
+        "total_accuracy": 440.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          40.0
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 58,
+        "total_accuracy": 520.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 58,
+        "total_accuracy": 340.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          40.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 58,
+        "total_accuracy": 440.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          20.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          40.0
+        ]
+      },
+      "mla3_set_1": {
+        "total_predictions": 45,
+        "total_accuracy": 840.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0
+        ]
+      },
+      "mla3_set_2": {
+        "total_predictions": 45,
+        "total_accuracy": 660.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          20.0,
+          20.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_3": {
+        "total_predictions": 45,
+        "total_accuracy": 940.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          20.0,
+          20.0,
+          20.0,
+          40.0,
+          40.0,
+          40.0,
+          20.0,
+          40.0,
+          20.0,
+          20.0
+        ]
+      },
+      "mla3_set_4": {
+        "total_predictions": 45,
+        "total_accuracy": 680.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          20.0,
+          20.0,
+          20.0,
+          0.0,
+          20.0,
+          0.0
+        ]
+      },
+      "mla3_set_5": {
+        "total_predictions": 45,
+        "total_accuracy": 740.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          20.0,
+          0.0,
+          0.0,
+          40.0,
+          40.0,
+          40.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Mega Millions": {
+      "balanced_mix": {
+        "total_predictions": 3,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          20.0,
+          0.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 3,
+        "total_accuracy": 40.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          20.0,
+          0.0
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 3,
+        "total_accuracy": 40.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          0.0,
+          20.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 3,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          20.0,
+          0.0
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 3,
+        "total_accuracy": 60.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          20.0,
+          0.0,
+          40.0
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 3,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          20.0
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 3,
+        "total_accuracy": 40.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          20.0,
+          20.0
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 3,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          20.0,
+          0.0
+        ]
+      },
+      "mla3_set_1": {
+        "total_predictions": 39,
+        "total_accuracy": 680.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          20.0,
+          0.0,
+          20.0,
+          20.0
+        ]
+      },
+      "mla3_set_2": {
+        "total_predictions": 39,
+        "total_accuracy": 680.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          20.0,
+          0.0,
+          20.0,
+          20.0
+        ]
+      },
+      "mla3_set_3": {
+        "total_predictions": 39,
+        "total_accuracy": 680.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          40.0,
+          0.0,
+          0.0,
+          20.0
+        ]
+      },
+      "mla3_set_4": {
+        "total_predictions": 39,
+        "total_accuracy": 680.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          20.0
+        ]
+      },
+      "mla3_set_5": {
+        "total_predictions": 39,
+        "total_accuracy": 660.0,
+        "best_accuracy": 80.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          20.0,
+          20.0,
+          0.0,
+          20.0,
+          20.0
+        ]
+      }
+    },
+    "Daily 3": {
+      "balanced_mix": {
+        "total_predictions": 8,
+        "total_accuracy": 199.99999999999997,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0,
+          66.66666666666666,
+          0.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 5,
+        "total_accuracy": 199.99999999999994,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          66.66666666666666,
+          33.33333333333333,
+          33.33333333333333
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 5,
+        "total_accuracy": 199.99999999999997,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          66.66666666666666,
+          66.66666666666666,
+          0.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 5,
+        "total_accuracy": 233.33333333333331,
+        "best_accuracy": 100.0,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0,
+          66.66666666666666,
+          100.0,
+          33.33333333333333
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 5,
+        "total_accuracy": 99.99999999999999,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          0.0,
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 5,
+        "total_accuracy": 133.33333333333331,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 5,
+        "total_accuracy": 99.99999999999999,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0,
+          0.0
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 5,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          33.33333333333333,
+          0.0,
+          0.0
+        ]
+      },
+      "hot_numbers_focus": {
+        "total_predictions": 3,
+        "total_accuracy": 99.99999999999999,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333
+        ]
+      },
+      "due_theory": {
+        "total_predictions": 3,
+        "total_accuracy": 99.99999999999999,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333
+        ]
+      },
+      "repeating_pattern": {
+        "total_predictions": 3,
+        "total_accuracy": 66.66666666666666,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          66.66666666666666,
+          0.0,
+          0.0
+        ]
+      },
+      "sequential_pattern": {
+        "total_predictions": 3,
+        "total_accuracy": 133.33333333333331,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          33.33333333333333,
+          66.66666666666666,
+          33.33333333333333
+        ]
+      },
+      "all_same": {
+        "total_predictions": 3,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0,
+          0.0
+        ]
+      },
+      "mixed_frequency": {
+        "total_predictions": 3,
+        "total_accuracy": 133.33333333333331,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          66.66666666666666
+        ]
+      },
+      "mla3_set_1": {
+        "total_predictions": 1,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333
+        ]
+      },
+      "mla3_set_2": {
+        "total_predictions": 1,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333
+        ]
+      },
+      "mla3_set_3": {
+        "total_predictions": 1,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333
+        ]
+      },
+      "mla3_set_4": {
+        "total_predictions": 1,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333
+        ]
+      },
+      "mla3_set_5": {
+        "total_predictions": 1,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333
+        ]
+      }
+    },
+    "Daily 4": {
+      "balanced_mix": {
+        "total_predictions": 21,
+        "total_accuracy": 750.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          50.0,
+          25.0,
+          50.0,
+          25.0,
+          25.0,
+          0.0,
+          50.0,
+          75.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 17,
+        "total_accuracy": 600.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          50.0,
+          25.0,
+          25.0,
+          50.0,
+          25.0,
+          25.0,
+          25.0,
+          25.0,
+          50.0,
+          0.0
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 17,
+        "total_accuracy": 700.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          50.0,
+          75.0,
+          50.0,
+          50.0,
+          25.0,
+          25.0,
+          75.0,
+          25.0,
+          50.0,
+          50.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 17,
+        "total_accuracy": 650.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          25.0,
+          25.0,
+          50.0,
+          50.0,
+          50.0,
+          25.0,
+          0.0,
+          50.0,
+          50.0,
+          50.0
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 17,
+        "total_accuracy": 675.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          25.0,
+          25.0,
+          50.0,
+          25.0,
+          75.0,
+          25.0,
+          25.0,
+          50.0,
+          25.0,
+          25.0
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 17,
+        "total_accuracy": 575.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          25.0,
+          25.0,
+          50.0,
+          50.0,
+          25.0,
+          50.0,
+          50.0,
+          50.0,
+          0.0,
+          0.0
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 17,
+        "total_accuracy": 500.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          25.0,
+          50.0,
+          25.0,
+          50.0,
+          25.0,
+          50.0,
+          25.0,
+          50.0
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 17,
+        "total_accuracy": 750.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          25.0,
+          50.0,
+          25.0,
+          50.0,
+          50.0,
+          0.0,
+          50.0,
+          50.0,
+          50.0,
+          75.0
+        ]
+      },
+      "hot_numbers_focus": {
+        "total_predictions": 4,
+        "total_accuracy": 175.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          50.0,
+          25.0,
+          50.0,
+          50.0
+        ]
+      },
+      "due_theory": {
+        "total_predictions": 4,
+        "total_accuracy": 150.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          50.0,
+          75.0
+        ]
+      },
+      "repeating_pattern": {
+        "total_predictions": 4,
+        "total_accuracy": 50.0,
+        "best_accuracy": 25.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          0.0,
+          25.0
+        ]
+      },
+      "sequential_pattern": {
+        "total_predictions": 4,
+        "total_accuracy": 250.0,
+        "best_accuracy": 100.0,
+        "recent_accuracy": [
+          25.0,
+          75.0,
+          50.0,
+          100.0
+        ]
+      },
+      "mirror_pattern": {
+        "total_predictions": 4,
+        "total_accuracy": 100.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          25.0,
+          50.0
+        ]
+      },
+      "all_same": {
+        "total_predictions": 4,
+        "total_accuracy": 25.0,
+        "best_accuracy": 25.0,
+        "recent_accuracy": [
+          0.0,
+          25.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mixed_frequency": {
+        "total_predictions": 4,
+        "total_accuracy": 225.0,
+        "best_accuracy": 100.0,
+        "recent_accuracy": [
+          25.0,
+          50.0,
+          100.0,
+          50.0
+        ]
+      }
+    },
+    "Daily 3 Midday": {
+      "balanced_mix": {
+        "total_predictions": 30,
+        "total_accuracy": 800.0,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          0.0,
+          66.66666666666666,
+          0.0,
+          33.33333333333333,
+          0.0,
+          66.66666666666666,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333
+        ]
+      },
+      "hot_numbers_focus": {
+        "total_predictions": 30,
+        "total_accuracy": 766.6666666666665,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          66.66666666666666,
+          0.0,
+          33.33333333333333,
+          66.66666666666666,
+          33.33333333333333,
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "due_theory": {
+        "total_predictions": 30,
+        "total_accuracy": 900.0000000000001,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0,
+          0.0,
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          0.0,
+          33.33333333333333
+        ]
+      },
+      "repeating_pattern": {
+        "total_predictions": 30,
+        "total_accuracy": 499.99999999999994,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          0.0,
+          66.66666666666666,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          33.33333333333333,
+          0.0,
+          0.0
+        ]
+      },
+      "sequential_pattern": {
+        "total_predictions": 30,
+        "total_accuracy": 900.0,
+        "best_accuracy": 100.0,
+        "recent_accuracy": [
+          0.0,
+          33.33333333333333,
+          0.0,
+          33.33333333333333,
+          66.66666666666666,
+          33.33333333333333,
+          0.0,
+          0.0,
+          0.0,
+          33.33333333333333
+        ]
+      },
+      "all_same": {
+        "total_predictions": 30,
+        "total_accuracy": 199.99999999999994,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mixed_frequency": {
+        "total_predictions": 30,
+        "total_accuracy": 933.3333333333336,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "mla3_set_1": {
+        "total_predictions": 3,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_2": {
+        "total_predictions": 3,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          0.0,
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "mla3_set_3": {
+        "total_predictions": 3,
+        "total_accuracy": 66.66666666666666,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0,
+          33.33333333333333
+        ]
+      },
+      "mla3_set_4": {
+        "total_predictions": 3,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_5": {
+        "total_predictions": 3,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Daily 3 Evening": {
+      "balanced_mix": {
+        "total_predictions": 5,
+        "total_accuracy": 99.99999999999999,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "hot_numbers_focus": {
+        "total_predictions": 5,
+        "total_accuracy": 133.33333333333331,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "due_theory": {
+        "total_predictions": 5,
+        "total_accuracy": 66.66666666666666,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          33.33333333333333,
+          0.0,
+          33.33333333333333
+        ]
+      },
+      "repeating_pattern": {
+        "total_predictions": 5,
+        "total_accuracy": 99.99999999999999,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          0.0,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "sequential_pattern": {
+        "total_predictions": 5,
+        "total_accuracy": 233.33333333333326,
+        "best_accuracy": 66.66666666666666,
+        "recent_accuracy": [
+          66.66666666666666,
+          66.66666666666666,
+          33.33333333333333,
+          33.33333333333333,
+          33.33333333333333
+        ]
+      },
+      "all_same": {
+        "total_predictions": 5,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mixed_frequency": {
+        "total_predictions": 5,
+        "total_accuracy": 66.66666666666666,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0,
+          33.33333333333333,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_1": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "mla3_set_2": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "mla3_set_3": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "mla3_set_4": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "mla3_set_5": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0
+        ]
+      }
+    },
+    "Lotto 47": {
+      "balanced_mix": {
+        "total_predictions": 2,
+        "total_accuracy": 16.666666666666664,
+        "best_accuracy": 16.666666666666664,
+        "recent_accuracy": [
+          16.666666666666664,
+          0.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          0.0,
+          33.33333333333333
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 33.33333333333333,
+        "recent_accuracy": [
+          33.33333333333333,
+          0.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 16.666666666666664,
+        "recent_accuracy": [
+          16.666666666666664,
+          16.666666666666664
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 16.666666666666664,
+        "recent_accuracy": [
+          16.666666666666664,
+          16.666666666666664
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 2,
+        "total_accuracy": 16.666666666666664,
+        "best_accuracy": 16.666666666666664,
+        "recent_accuracy": [
+          0.0,
+          16.666666666666664
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 2,
+        "total_accuracy": 33.33333333333333,
+        "best_accuracy": 16.666666666666664,
+        "recent_accuracy": [
+          16.666666666666664,
+          16.666666666666664
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 2,
+        "total_accuracy": 16.666666666666664,
+        "best_accuracy": 16.666666666666664,
+        "recent_accuracy": [
+          0.0,
+          16.666666666666664
+        ]
+      }
+    },
+    "Fantasy 5": {
+      "balanced_mix": {
+        "total_predictions": 6,
+        "total_accuracy": 180.0,
+        "best_accuracy": 60.0,
+        "recent_accuracy": [
+          20.0,
+          60.0,
+          0.0,
+          60.0,
+          20.0,
+          20.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 6,
+        "total_accuracy": 100.0,
+        "best_accuracy": 60.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          40.0,
+          60.0
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 6,
+        "total_accuracy": 80.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          20.0,
+          0.0,
+          20.0,
+          0.0,
+          20.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 6,
+        "total_accuracy": 80.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          20.0,
+          40.0,
+          20.0,
+          0.0
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 6,
+        "total_accuracy": 40.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          20.0
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 6,
+        "total_accuracy": 140.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          20.0,
+          40.0,
+          20.0,
+          40.0,
+          20.0,
+          0.0
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 6,
+        "total_accuracy": 60.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          20.0,
+          20.0,
+          0.0,
+          20.0
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 6,
+        "total_accuracy": 60.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          20.0,
+          20.0
+        ]
+      }
+    },
+    "Fantasy 5 Double Play": {
+      "balanced_mix": {
+        "total_predictions": 2,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          20.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 2,
+        "total_accuracy": 40.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          20.0
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 2,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 2,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          0.0
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 2,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          0.0,
+          20.0
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 2,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          0.0
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 2,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          0.0
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 2,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0,
+          0.0
+        ]
+      }
+    },
+    "Lucky for Life": {
+      "balanced_mix": {
+        "total_predictions": 1,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0
+        ]
+      },
+      "hot_focus": {
+        "total_predictions": 1,
+        "total_accuracy": 20.0,
+        "best_accuracy": 20.0,
+        "recent_accuracy": [
+          20.0
+        ]
+      },
+      "cold_theory": {
+        "total_predictions": 1,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0
+        ]
+      },
+      "random_statistical": {
+        "total_predictions": 1,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0
+        ]
+      },
+      "consecutive_pattern": {
+        "total_predictions": 1,
+        "total_accuracy": 40.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          40.0
+        ]
+      },
+      "sum_optimized": {
+        "total_predictions": 1,
+        "total_accuracy": 40.0,
+        "best_accuracy": 40.0,
+        "recent_accuracy": [
+          40.0
+        ]
+      },
+      "odd_even_balanced": {
+        "total_predictions": 1,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0
+        ]
+      },
+      "relationship_based": {
+        "total_predictions": 1,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0
+        ]
+      }
+    },
+    "Daily 4 Midday": {
+      "balanced_mix": {
+        "total_predictions": 5,
+        "total_accuracy": 200.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          25.0,
+          25.0,
+          25.0,
+          75.0,
+          50.0
+        ]
+      },
+      "hot_numbers_focus": {
+        "total_predictions": 5,
+        "total_accuracy": 225.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          50.0,
+          50.0,
+          50.0,
+          50.0,
+          25.0
+        ]
+      },
+      "due_theory": {
+        "total_predictions": 5,
+        "total_accuracy": 100.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          50.0,
+          0.0,
+          25.0,
+          0.0,
+          25.0
+        ]
+      },
+      "repeating_pattern": {
+        "total_predictions": 5,
+        "total_accuracy": 150.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          25.0,
+          50.0,
+          50.0
+        ]
+      },
+      "sequential_pattern": {
+        "total_predictions": 5,
+        "total_accuracy": 200.0,
+        "best_accuracy": 75.0,
+        "recent_accuracy": [
+          50.0,
+          50.0,
+          75.0,
+          25.0,
+          0.0
+        ]
+      },
+      "mirror_pattern": {
+        "total_predictions": 5,
+        "total_accuracy": 125.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          25.0,
+          25.0,
+          50.0
+        ]
+      },
+      "all_same": {
+        "total_predictions": 5,
+        "total_accuracy": 25.0,
+        "best_accuracy": 25.0,
+        "recent_accuracy": [
+          25.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mixed_frequency": {
+        "total_predictions": 5,
+        "total_accuracy": 175.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          25.0,
+          25.0,
+          50.0,
+          25.0,
+          50.0
+        ]
+      },
+      "mla3_set_1": {
+        "total_predictions": 4,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_2": {
+        "total_predictions": 4,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_3": {
+        "total_predictions": 4,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_4": {
+        "total_predictions": 4,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mla3_set_5": {
+        "total_predictions": 4,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Daily 4 Evening": {
+      "balanced_mix": {
+        "total_predictions": 1,
+        "total_accuracy": 50.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          50.0
+        ]
+      },
+      "hot_numbers_focus": {
+        "total_predictions": 1,
+        "total_accuracy": 50.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          50.0
+        ]
+      },
+      "due_theory": {
+        "total_predictions": 1,
+        "total_accuracy": 50.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          50.0
+        ]
+      },
+      "repeating_pattern": {
+        "total_predictions": 1,
+        "total_accuracy": 25.0,
+        "best_accuracy": 25.0,
+        "recent_accuracy": [
+          25.0
+        ]
+      },
+      "sequential_pattern": {
+        "total_predictions": 1,
+        "total_accuracy": 25.0,
+        "best_accuracy": 25.0,
+        "recent_accuracy": [
+          25.0
+        ]
+      },
+      "mirror_pattern": {
+        "total_predictions": 1,
+        "total_accuracy": 0.0,
+        "best_accuracy": 0,
+        "recent_accuracy": [
+          0.0
+        ]
+      },
+      "all_same": {
+        "total_predictions": 1,
+        "total_accuracy": 25.0,
+        "best_accuracy": 25.0,
+        "recent_accuracy": [
+          25.0
+        ]
+      },
+      "mixed_frequency": {
+        "total_predictions": 1,
+        "total_accuracy": 50.0,
+        "best_accuracy": 50.0,
+        "recent_accuracy": [
+          50.0
+        ]
+      }
+    }
+  },
+  "pattern_accuracy": {},
+  "number_hit_rates": {},
+  "last_updated": "2025-11-20T13:44:04.804465"
+}

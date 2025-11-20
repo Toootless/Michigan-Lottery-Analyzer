@@ -1,0 +1,74 @@
+{
+  "Fantasy 5": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Daily 3": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Daily 4": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Daily 3 Midday": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Daily 3 Evening": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Daily 4 Midday": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Daily 4 Evening": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Powerball": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  },
+  "Mega Millions": {
+    "success": true,
+    "status_code": 200,
+    "content_length": 6179,
+    "numbers_found": 0,
+    "example_numbers": [],
+    "time_indicators": []
+  }
+}

@@ -1,0 +1,35 @@
+# Local CUDA-enabled LLM Requirements for RTX 3060
+# Install these packages for local AI functionality
+
+# Core PyTorch with CUDA support (adjust for your CUDA version)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Transformers and accelerate for local LLM
+transformers>=4.30.0
+accelerate>=0.20.0
+bitsandbytes>=0.39.0  # For 8-bit quantization to save VRAM
+
+# Existing requirements
+streamlit>=1.40.0
+pandas>=1.5.0
+numpy>=1.24.0
+requests>=2.28.0
+
+# Optional: Alternative local LLM options
+# ollama-python>=0.1.0  # For Ollama integration
+# llama-cpp-python>=0.2.0  # For GGML models
+
+# Optional: GPU memory optimization
+# xformers>=0.0.20  # Memory efficient attention (requires specific PyTorch version)
+
+# Installation instructions:
+# 1. Install CUDA 11.8 or 12.1 from NVIDIA
+# 2. Install PyTorch with CUDA:
+#    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+# 3. Install other requirements:
+#    pip install -r requirements_local.txt
+# 4. For Ollama (alternative):
+#    - Download Ollama from https://ollama.ai/
+#    - Run: ollama pull llama2

@@ -1,0 +1,84 @@
+{
+  "timestamp": "2025-10-29T19:30:35.875325",
+  "results": {
+    "Daily 4": {
+      "game": "Daily 4",
+      "numbers": [
+        1,
+        7,
+        5,
+        0
+      ],
+      "draw_date": "Tuesday, Oct 28, 2025",
+      "success": true,
+      "source": "csv",
+      "error": null,
+      "is_current": false
+    },
+    "Daily 3": {
+      "game": "Daily 3",
+      "numbers": [
+        1,
+        5,
+        0
+      ],
+      "draw_date": "Tuesday, Oct 28, 2025",
+      "success": true,
+      "source": "csv",
+      "error": null,
+      "is_current": false
+    },
+    "Lucky for Life": {
+      "game": "Lucky for Life",
+      "numbers": [
+        14,
+        15,
+        21,
+        24,
+        45,
+        8
+      ],
+      "draw_date": "Tuesday, Oct 28, 2025",
+      "success": true,
+      "source": "csv",
+      "error": null,
+      "is_current": false
+    },
+    "Lotto 47": {
+      "game": "Lotto 47",
+      "numbers": [],
+      "draw_date": null,
+      "success": false,
+      "source": "csv",
+      "error": "No current data available"
+    },
+    "Powerball": {
+      "game": "Powerball",
+      "numbers": [],
+      "draw_date": null,
+      "success": false,
+      "source": "csv",
+      "error": "No current data available"
+    },
+    "Mega Millions": {
+      "game": "Mega Millions",
+      "numbers": [
+        2,
+        19,
+        33,
+        53,
+        61
+      ],
+      "draw_date": "Tuesday, Oct 28, 2025",
+      "success": true,
+      "source": "csv",
+      "error": null,
+      "is_current": false
+    }
+  },
+  "summary": {
+    "total_games": 6,
+    "successful": 4,
+    "failed": 2
+  }
+}

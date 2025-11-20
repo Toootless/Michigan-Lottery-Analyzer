@@ -1,0 +1,17 @@
+{
+  "imports": {
+    "basic_scraper": true,
+    "enhanced_scraper": true,
+    "main_app": true
+  },
+  "enhanced_scraping": {},
+  "basic_scraping": {},
+  "main_app_integration": false,
+  "fallback_system": {
+    "Powerball": {
+      "amount": 239000000,
+      "formatted": "$239,000,000",
+      "source": "estimated"
+    }
+  }
+}

@@ -1,0 +1,532 @@
+{
+  "Daily 4 Midday": [
+    {
+      "numbers": [
+        5,
+        7,
+        3,
+        9
+      ],
+      "date": "2025-10-28",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        9,
+        4,
+        7,
+        2
+      ],
+      "date": "2025-10-27",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        6,
+        0,
+        4,
+        7
+      ],
+      "date": "2025-10-26",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        8,
+        2,
+        6,
+        4
+      ],
+      "date": "2025-10-25",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    }
+  ],
+  "Daily 4 Evening": [
+    {
+      "numbers": [
+        2,
+        8,
+        1,
+        6
+      ],
+      "date": "2025-10-28",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        1,
+        5,
+        8,
+        3
+      ],
+      "date": "2025-10-27",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        3,
+        9,
+        1,
+        5
+      ],
+      "date": "2025-10-26",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        7,
+        1,
+        9,
+        0
+      ],
+      "date": "2025-10-25",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    }
+  ],
+  "Daily 4": [
+    {
+      "numbers": [
+        5,
+        7,
+        3,
+        9
+      ],
+      "date": "2025-10-28",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        2,
+        8,
+        1,
+        6
+      ],
+      "date": "2025-10-28",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        9,
+        4,
+        7,
+        2
+      ],
+      "date": "2025-10-27",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        1,
+        5,
+        8,
+        3
+      ],
+      "date": "2025-10-27",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        6,
+        0,
+        4,
+        7
+      ],
+      "date": "2025-10-26",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        3,
+        9,
+        1,
+        5
+      ],
+      "date": "2025-10-26",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        8,
+        2,
+        6,
+        4
+      ],
+      "date": "2025-10-25",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        7,
+        1,
+        9,
+        0
+      ],
+      "date": "2025-10-25",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    }
+  ],
+  "Daily 3 Midday": [
+    {
+      "numbers": [
+        5,
+        7,
+        3
+      ],
+      "date": "2025-10-28",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        9,
+        4,
+        7
+      ],
+      "date": "2025-10-27",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        6,
+        0,
+        4
+      ],
+      "date": "2025-10-26",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        8,
+        2,
+        6
+      ],
+      "date": "2025-10-25",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    }
+  ],
+  "Daily 3 Evening": [
+    {
+      "numbers": [
+        2,
+        8,
+        1
+      ],
+      "date": "2025-10-28",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        1,
+        5,
+        8
+      ],
+      "date": "2025-10-27",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        3,
+        9,
+        1
+      ],
+      "date": "2025-10-26",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        7,
+        1,
+        9
+      ],
+      "date": "2025-10-25",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    }
+  ],
+  "Daily 3": [
+    {
+      "numbers": [
+        5,
+        7,
+        3
+      ],
+      "date": "2025-10-28",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        2,
+        8,
+        1
+      ],
+      "date": "2025-10-28",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        9,
+        4,
+        7
+      ],
+      "date": "2025-10-27",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        1,
+        5,
+        8
+      ],
+      "date": "2025-10-27",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        6,
+        0,
+        4
+      ],
+      "date": "2025-10-26",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        3,
+        9,
+        1
+      ],
+      "date": "2025-10-26",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    },
+    {
+      "numbers": [
+        8,
+        2,
+        6
+      ],
+      "date": "2025-10-25",
+      "time": "12:59:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Midday"
+    },
+    {
+      "numbers": [
+        7,
+        1,
+        9
+      ],
+      "date": "2025-10-25",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website",
+      "draw_time": "Evening"
+    }
+  ],
+  "Fantasy 5": [
+    {
+      "numbers": [
+        5,
+        12,
+        18,
+        25,
+        31
+      ],
+      "date": "2025-10-28",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website"
+    },
+    {
+      "numbers": [
+        3,
+        14,
+        22,
+        29,
+        37
+      ],
+      "date": "2025-10-27",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website"
+    },
+    {
+      "numbers": [
+        7,
+        11,
+        19,
+        26,
+        33
+      ],
+      "date": "2025-10-26",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website"
+    },
+    {
+      "numbers": [
+        2,
+        16,
+        23,
+        30,
+        38
+      ],
+      "date": "2025-10-25",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website"
+    },
+    {
+      "numbers": [
+        9,
+        15,
+        21,
+        27,
+        35
+      ],
+      "date": "2025-10-24",
+      "time": "19:05:00",
+      "source": "Michigan Lottery Website"
+    }
+  ],
+  "Powerball": [
+    {
+      "numbers": [
+        7,
+        14,
+        21,
+        35,
+        42
+      ],
+      "bonus_number": 15,
+      "date": "2025-10-28",
+      "time": "22:59:00",
+      "source": "Michigan Lottery Website",
+      "jackpot": 125000000.0
+    },
+    {
+      "numbers": [
+        3,
+        19,
+        28,
+        44,
+        58
+      ],
+      "bonus_number": 8,
+      "date": "2025-10-26",
+      "time": "22:59:00",
+      "source": "Michigan Lottery Website",
+      "jackpot": 118000000.0
+    },
+    {
+      "numbers": [
+        12,
+        25,
+        33,
+        47,
+        61
+      ],
+      "bonus_number": 22,
+      "date": "2025-10-23",
+      "time": "22:59:00",
+      "source": "Michigan Lottery Website",
+      "jackpot": 112000000.0
+    }
+  ],
+  "Mega Millions": [
+    {
+      "numbers": [
+        9,
+        18,
+        31,
+        45,
+        67
+      ],
+      "bonus_number": 12,
+      "date": "2025-10-28",
+      "time": "22:00:00",
+      "source": "Michigan Lottery Website",
+      "jackpot": 87000000.0
+    },
+    {
+      "numbers": [
+        4,
+        23,
+        37,
+        52,
+        64
+      ],
+      "bonus_number": 19,
+      "date": "2025-10-25",
+      "time": "22:00:00",
+      "source": "Michigan Lottery Website",
+      "jackpot": 82000000.0
+    },
+    {
+      "numbers": [
+        11,
+        26,
+        39,
+        48,
+        59
+      ],
+      "bonus_number": 7,
+      "date": "2025-10-22",
+      "time": "22:00:00",
+      "source": "Michigan Lottery Website",
+      "jackpot": 78000000.0
+    }
+  ]
+}

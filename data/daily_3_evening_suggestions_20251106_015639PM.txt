@@ -1,0 +1,39 @@
+=== DAILY 3 EVENING NUMBER SUGGESTIONS ===
+Generated: 2025-11-06 01:56:39 PM
+Analysis Period: 3650 days
+Game: Daily 3 Evening (Duplicates allowed)
+==========================================
+
+Strategy 1: MLA3 Ensemble
+  Numbers: 169
+  Confidence: 68%
+  Weight: 1.25
+  Method: Frequency + Recency + Due-gap + Pairwise + Sum-band
+
+Strategy 2: MLA3 Ensemble
+  Numbers: 169
+  Confidence: 63%
+  Weight: 1.25
+  Method: Frequency + Recency + Due-gap + Pairwise + Sum-band
+
+Strategy 3: MLA3 Ensemble
+  Numbers: 169
+  Confidence: 61%
+  Weight: 1.25
+  Method: Frequency + Recency + Due-gap + Pairwise + Sum-band
+
+Strategy 4: MLA3 Ensemble
+  Numbers: 169
+  Confidence: 59%
+  Weight: 1.25
+  Method: Frequency + Recency + Due-gap + Pairwise + Sum-band
+
+Strategy 5: MLA3 Ensemble
+  Numbers: 169
+  Confidence: 55%
+  Weight: 1.25
+  Method: Frequency + Recency + Due-gap + Pairwise + Sum-band
+
+Total Strategies: 5
+Digit Range: 0-9 (each position independent)
+==========================================
