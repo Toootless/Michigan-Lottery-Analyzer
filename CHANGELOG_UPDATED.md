@@ -1,5 +1,24 @@
 # 📋 Michigan Lottery Analyzer - Complete Changelog
 
+## Version 3.1.3 - December 1, 2025
+
+### 🐛 Critical Bug Fix: Powerball Bonus Number Generation
+- **Issue Fixed**: Powerball, Mega Millions, and Lucky for Life bonus numbers were identical across all strategy suggestions
+- **Root Cause**: `generate_number_suggestions()` was generating a single bonus number and reusing it for all 4 strategies (Balanced Mix, Hot Focus, Due Theory, Statistical Random)
+- **Solution**: Modified bonus generation to create unique random bonus number for EACH strategy independently
+- **Files Updated**: 
+  - `MichiganLotteryAnalyzer.py` (Lines 3415-3468)
+  - `FINAL_RELEASE_v2.3/src/MichiganLotteryAnalyzer.py` (consistency)
+- **Games Affected**: Powerball (1-26), Mega Millions (1-25), Lucky for Life (1-18)
+- **Games Unaffected**: Lotto 47, Fantasy 5, Daily 3/4 (no bonus numbers)
+- **Testing**: Each strategy now displays different bonus numbers on regeneration
+
+### 📝 Documentation
+- Created `SESSION_NOTES_DEC01.md` documenting the bug discovery and fix process
+- Updated `CHANGELOG_UPDATED.md` with v3.1.3 release notes
+
+---
+
 ## Version 3.1.2 - November 16, 2024
 
 ### 💰 Live Jackpot Tracking System
