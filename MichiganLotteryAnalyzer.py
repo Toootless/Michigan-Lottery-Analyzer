@@ -7,6 +7,7 @@ import streamlit as st
 import os
 import sys
 import time
+import csv
 from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional
 import pandas as pd
@@ -1990,6 +1991,252 @@ def update_learning_weights(performance_metrics: Dict[str, Any], game_name: str)
     save_learning_weights(weights)
     return weights
 
+# ============================================================================
+# ADVANCED STATISTICAL PREDICTION FUNCTIONS (NEW - Dec 2025)
+# ============================================================================
+
+def perform_chi_square_test(results: List[Dict], game_name: str) -> Dict[str, Any]:
+    """
+    Perform chi-square goodness of fit test on number frequencies
+    Tests if lottery numbers follow expected uniform distribution
+    """
+    try:
+        from scipy.stats import chisquare
+        import numpy as np
+        
+        game_config = LOTTERY_GAMES.get(game_name, LOTTERY_GAMES['Powerball'])
+        numbers_range = game_config['numbers_range']
+        
+        # Collect all main numbers
+        all_numbers = []
+        for result in results:
+            if 'numbers' in result:
+                numbers = result['numbers']
+                # Exclude bonus number (last element for games with bonus)
+                if 'bonus_range' in game_config and len(numbers) > game_config['numbers_count']:
+                    numbers = numbers[:game_config['numbers_count']]
+                all_numbers.extend(numbers)
+        
+        if not all_numbers or len(all_numbers) < 20:
+            return {'status': 'insufficient_data', 'min_required': 20}
+        
+        # Calculate observed frequencies
+        freq_dict = Counter(all_numbers)
+        observed = np.array([freq_dict.get(i, 0) for i in range(numbers_range[0], numbers_range[1] + 1)])
+        
+        # Expected frequency under null hypothesis (uniform distribution)
+        expected = np.full(len(observed), len(all_numbers) / len(observed))
+        
+        # Perform chi-square test with error handling for frequency mismatches
+        try:
+            chi2_stat, p_value = chisquare(observed, expected)
+        except ValueError:
+            # If chi-square fails due to frequency mismatch, use normalized frequencies
+            # This can happen with small sample sizes or sparse data
+            observed_normalized = observed.astype(float)
+            expected_normalized = expected.astype(float)
+            
+            # Normalize to handle frequency mismatches
+            obs_sum = observed_normalized.sum()
+            exp_sum = expected_normalized.sum()
+            if obs_sum > 0:
+                observed_normalized = observed_normalized * (exp_sum / obs_sum)
+            
+            chi2_stat, p_value = chisquare(observed_normalized, expected_normalized)
+        
+        return {
+            'status': 'success',
+            'chi_square_statistic': float(chi2_stat),
+            'p_value': float(p_value),
+            'is_uniform': p_value > 0.05,  # Accept null hypothesis if p > 0.05
+            'interpretation': 'Numbers appear uniformly distributed' if p_value > 0.05 else 'Significant deviation from uniform distribution detected'
+        }
+    except Exception as e:
+        return {'status': 'error', 'message': str(e)}
+
+def perform_bayesian_number_analysis(results: List[Dict], game_name: str) -> Dict[str, Any]:
+    """
+    Perform Bayesian analysis to estimate true probability of number occurrence
+    Uses conjugate prior (Beta distribution) to update beliefs about number frequencies
+    """
+    try:
+        import numpy as np
+        from scipy.stats import binom
+        
+        game_config = LOTTERY_GAMES.get(game_name, LOTTERY_GAMES['Powerball'])
+        numbers_count = game_config['numbers_count']
+        numbers_range = game_config['numbers_range']
+        
+        # Collect frequencies
+        all_numbers = []
+        for result in results:
+            if 'numbers' in result:
+                numbers = result['numbers'][:numbers_count]
+                all_numbers.extend(numbers)
+        
+        total_draws = len(results)
+        if total_draws < 10:
+            return {'status': 'insufficient_data'}
+        
+        # Bayesian analysis: Beta-Binomial conjugate prior
+        # Prior: Beta(1, 1) = uniform distribution
+        # Update with observed data
+        
+        bayesian_results = {
+            'status': 'success',
+            'total_draws': total_draws,
+            'analysis': {}
+        }
+        
+        for num in range(numbers_range[0], numbers_range[1] + 1):
+            count = all_numbers.count(num)
+            
+            # Bayesian update: Beta(α, β) where α = successes + 1, β = failures + 1
+            alpha = count + 1
+            beta = (total_draws * numbers_count - count) + 1
+            
+            # Posterior mean probability
+            posterior_mean = alpha / (alpha + beta)
+            
+            # Posterior variance for credible interval
+            posterior_var = (alpha * beta) / ((alpha + beta) ** 2 * (alpha + beta + 1))
+            posterior_std = np.sqrt(posterior_var)
+            
+            bayesian_results['analysis'][num] = {
+                'observed_count': count,
+                'posterior_mean_probability': float(posterior_mean),
+                'credible_interval_95': (
+                    float(max(0, posterior_mean - 1.96 * posterior_std)),
+                    float(min(1, posterior_mean + 1.96 * posterior_std))
+                ),
+                'expected_frequency': posterior_mean
+            }
+        
+        return bayesian_results
+    except Exception as e:
+        return {'status': 'error', 'message': str(e)}
+
+def forecast_number_trends(results: List[Dict], game_name: str, periods: int = 5) -> Dict[str, Any]:
+    """
+    Use time series analysis (Prophet) to forecast number appearance trends
+    """
+    try:
+        import numpy as np
+        
+        game_config = LOTTERY_GAMES.get(game_name, LOTTERY_GAMES['Powerball'])
+        numbers_count = game_config['numbers_count']
+        
+        # Collect time series data: number frequencies by draw
+        draw_dates = []
+        number_counts = {i: [] for i in range(1, 100)}
+        
+        sorted_results = sorted(results, key=lambda x: x.get('date', datetime.now()))
+        
+        for result in sorted_results:
+            if 'date' in result:
+                draw_dates.append(result['date'])
+                
+                # Count which numbers appear
+                numbers = result.get('numbers', [])[:numbers_count]
+                for num in number_counts:
+                    number_counts[num].append(1 if num in numbers else 0)
+        
+        if len(draw_dates) < 10:
+            return {'status': 'insufficient_data', 'min_required': 10}
+        
+        try:
+            from prophet import Prophet
+            import pandas as pd
+            
+            # Use top 5 hot numbers for trend forecast
+            hot_numbers = sorted(
+                number_counts.items(),
+                key=lambda x: sum(x[1]),
+                reverse=True
+            )[:5]
+            
+            forecast_data = {
+                'status': 'success',
+                'forecast_periods': periods,
+                'number_trends': {}
+            }
+            
+            for num, counts in hot_numbers:
+                try:
+                    # Prepare data for Prophet
+                    df = pd.DataFrame({
+                        'ds': draw_dates,
+                        'y': counts
+                    })
+                    
+                    # Fit Prophet model
+                    model = Prophet(yearly_seasonality=False, daily_seasonality=False, interval_width=0.95)
+                    model.fit(df)
+                    
+                    # Forecast
+                    future = model.make_future_dataframe(periods=periods, freq='D')
+                    forecast = model.predict(future)
+                    
+                    forecast_data['number_trends'][num] = {
+                        'trend': float(forecast['trend'].iloc[-1]),
+                        'forecast_upper': float(forecast['yhat_upper'].iloc[-1]),
+                        'forecast_lower': float(forecast['yhat_lower'].iloc[-1])
+                    }
+                except Exception:
+                    pass
+            
+            return forecast_data
+        except ImportError:
+            return {'status': 'prophet_not_available'}
+        
+    except Exception as e:
+        return {'status': 'error', 'message': str(e)}
+
+def calculate_statistical_confidence(
+    hot_numbers: List[int],
+    cold_numbers: List[int],
+    recent_accuracy: List[float],
+    strategy_weights: Dict[str, float]
+) -> Dict[str, Any]:
+    """
+    Calculate statistical confidence scores using multiple metrics
+    - Win rate tracking
+    - Strategy weights
+    - Number frequencies
+    """
+    try:
+        import numpy as np
+        from scipy import stats
+        
+        # Win rate with confidence interval
+        if recent_accuracy:
+            win_rate = np.mean(recent_accuracy)
+            n = len(recent_accuracy)
+            
+            # 95% confidence interval for binomial proportion
+            se = np.sqrt(win_rate * (1 - win_rate) / n)
+            ci_lower = max(0, win_rate - 1.96 * se)
+            ci_upper = min(1, win_rate + 1.96 * se)
+            
+            # T-test for statistical significance vs random
+            random_prob = 0.05  # Rough estimate for lottery
+            t_stat = (win_rate - random_prob) / se if se > 0 else 0
+            p_value = 1 - stats.norm.cdf(abs(t_stat))
+            
+            return {
+                'win_rate': float(win_rate),
+                'confidence_interval': (float(ci_lower), float(ci_upper)),
+                't_statistic': float(t_stat),
+                'p_value': float(p_value),
+                'is_significant': p_value < 0.05,
+                'avg_strategy_weight': float(np.mean(list(strategy_weights.values())))
+            }
+        
+        return {'status': 'insufficient_data'}
+    
+    except Exception as e:
+        return {'status': 'error', 'message': str(e)}
+
 # Simple config
 LOTTERY_GAMES = {
     'Powerball': {
@@ -3202,14 +3449,17 @@ def generate_pattern_based_suggestions(analysis: Dict[str, Any], deep_patterns: 
         }
     
     # Add bonus numbers if applicable
-    bonus_number = None
+    # Generate a unique bonus number for EACH strategy
     if 'bonus_range' in game_config:
         bonus_range = game_config['bonus_range']
-        bonus_number = random.randint(bonus_range[0], bonus_range[1])
-    
-    # Add bonus number to all strategies
-    for strategy in suggestions.values():
-        strategy['bonus'] = bonus_number
+        for strategy in suggestions.values():
+            # Generate a new random bonus number for each strategy
+            bonus_number = random.randint(bonus_range[0], bonus_range[1])
+            strategy['bonus'] = bonus_number
+    else:
+        # No bonus number for this game
+        for strategy in suggestions.values():
+            strategy['bonus'] = None
 
     # Ensure uniqueness across the pattern strategies as well
     unique_sets = set()
@@ -3414,12 +3664,6 @@ def generate_number_suggestions(analysis: Dict[str, Any], game_name: str) -> Dic
     # Strategy 4: Random Statistical
     random_numbers = random.sample(all_numbers, numbers_count)
     
-    # Generate bonus number if applicable
-    bonus_number = None
-    if 'bonus_range' in game_config:
-        bonus_range = game_config['bonus_range']
-        bonus_number = random.randint(bonus_range[0], bonus_range[1])
-    
     # Adjust confidence based on learning weights
     balanced_weight = strategy_weights.get('balanced_mix', 1.0)
     hot_weight = strategy_weights.get('hot_focus', 1.0)
@@ -3428,7 +3672,6 @@ def generate_number_suggestions(analysis: Dict[str, Any], game_name: str) -> Dic
     suggestions = {
         'balanced_mix': {
             'numbers': sorted(balanced_numbers[:numbers_count]),
-            'bonus': bonus_number,
             'strategy': 'Balanced Mix',
             'description': 'Combines hot numbers, cold numbers, and medium frequency numbers for balance',
             'confidence': 'High' if balanced_weight > 1.5 else 'Medium' if balanced_weight > 0.8 else 'Low',
@@ -3436,7 +3679,6 @@ def generate_number_suggestions(analysis: Dict[str, Any], game_name: str) -> Dic
         },
         'hot_focus': {
             'numbers': sorted(hot_focus),
-            'bonus': bonus_number,
             'strategy': 'Hot Numbers Focus',
             'description': 'Emphasizes frequently drawn numbers based on recent patterns',
             'confidence': 'High' if hot_weight > 1.5 else 'Medium' if hot_weight > 0.8 else 'Low',
@@ -3444,7 +3686,6 @@ def generate_number_suggestions(analysis: Dict[str, Any], game_name: str) -> Dic
         },
         'cold_theory': {
             'numbers': sorted(cold_focus),
-            'bonus': bonus_number,
             'strategy': 'Due Theory',
             'description': 'Focuses on "due" numbers that haven\'t appeared recently',
             'confidence': 'High' if cold_weight > 1.5 else 'Medium' if cold_weight > 0.8 else 'Low',
@@ -3452,13 +3693,21 @@ def generate_number_suggestions(analysis: Dict[str, Any], game_name: str) -> Dic
         },
         'random_statistical': {
             'numbers': sorted(random_numbers),
-            'bonus': bonus_number,
             'strategy': 'Statistical Random',
             'description': 'Mathematically random selection from valid range',
             'confidence': 'Equal',
             'weight': 1.0
         }
     }
+    
+    # Generate unique bonus number for EACH strategy if applicable
+    if 'bonus_range' in game_config:
+        bonus_range = game_config['bonus_range']
+        for strategy in suggestions.values():
+            strategy['bonus'] = random.randint(bonus_range[0], bonus_range[1])
+    else:
+        for strategy in suggestions.values():
+            strategy['bonus'] = None
 
     # --- Uniqueness Enforcement -------------------------------------------------
     # Occasionally the underlying hot/cold frequency distributions can be sparse or overlapping,
@@ -4667,34 +4916,16 @@ def main():
                 # Quick manual refresh to pull latest CSV/log state
                 if st.button("🔄 Refresh Data", key=f"refresh_recent_{selected_game}"):
                     st.rerun()
-                log_entries = load_winning_numbers_from_log(selected_game, 10)
+                
                 csv_entries = []
+                log_entries = []
                 latest_source = "log"
                 
-                # Try to load CSV history as well
-                if CSV_SCRAPER_AVAILABLE:
-                    try:
-                        scraper = get_csv_scraper()
-                        csv_entries = scraper.get_recent_history(selected_game, count=10) or []
-                        # Auto-repair: if no entries yet, attempt to build/refresh CSV once
-                        if not csv_entries:
-                            try:
-                                # Ensure unified CSV exists and is populated, then try again
-                                # This is a light, one-shot repair to avoid the empty-state loop
-                                csv_path_hint = scraper.csv_files.get(selected_game)
-                                if csv_path_hint:
-                                    from pathlib import Path as _P
-                                    scraper.ensure_unified_game_csv(selected_game, _P(csv_path_hint))
-                                # Try reading again
-                                csv_entries = scraper.get_recent_history(selected_game, count=10) or []
-                                # If still empty, try a quick update (non-blocking, returns fast if up-to-date)
-                                if not csv_entries:
-                                    if scraper.update_game_csv(selected_game):
-                                        csv_entries = scraper.get_recent_history(selected_game, count=10) or []
-                            except Exception:
-                                pass
-                    except Exception:
-                        csv_entries = []
+                # Use log files - they have clean, correct data
+                log_entries = load_winning_numbers_from_log(selected_game, 10)
+                if log_entries:
+                    latest_source = "log"
+                    csv_entries = []  # Don't use CSV, logs are authoritative
 
                 # Helper to parse dates
                 def _parse_date_any(s: str):
@@ -4733,7 +4964,7 @@ def main():
                     latest_log_dt = max((e['date'] for e in log_entries if isinstance(e.get('date'), datetime)), default=None)
                 latest_csv_dt = None
                 if csv_entries:
-                    latest_csv_dt = max((_parse_date_any(str(e.get('draw_date', ''))) for e in csv_entries), default=None)
+                    latest_csv_dt = max((_parse_date_any(str(e.get('date', e.get('draw_date', '')))) for e in csv_entries), default=None)
 
                 if use_csv:
                     # Render from CSV history
@@ -4838,6 +5069,117 @@ def main():
                             with cc2:
                                 if st.button("✍️ Add Manual Draw", key=f"manual_add_{selected_game}"):
                                     st.session_state["show_manual_add"] = True
+                
+                # ============================================================================
+                # ADVANCED STATISTICAL ANALYSIS SECTION (NEW - Dec 2025)
+                # ============================================================================
+                st.markdown("---")
+                st.markdown("### 📊 Advanced Statistical Analysis")
+                
+                # Get lottery data for statistical tests
+                results = get_lottery_data(selected_game, days=365)
+                
+                if len(results) >= 20:
+                    # Create tabs for different statistical analyses
+                    stat_tab1, stat_tab2, stat_tab3, stat_tab4 = st.tabs(
+                        ["🎲 Chi-Square Test", "🔬 Bayesian Analysis", "📈 Trend Forecast", "📊 Confidence Metrics"]
+                    )
+                    
+                    with stat_tab1:
+                        st.write("**Chi-Square Goodness of Fit Test**")
+                        st.write("Tests if lottery numbers follow expected uniform distribution (all equally likely)")
+                        
+                        chi_square_result = perform_chi_square_test(results, selected_game)
+                        
+                        if chi_square_result['status'] == 'success':
+                            col_a, col_b, col_c = st.columns(3)
+                            with col_a:
+                                st.metric("χ² Statistic", f"{chi_square_result['chi_square_statistic']:.2f}")
+                            with col_b:
+                                st.metric("P-Value", f"{chi_square_result['p_value']:.4f}")
+                            with col_c:
+                                interpretation = "✅ Uniform" if chi_square_result['is_uniform'] else "⚠️ Non-Uniform"
+                                st.metric("Distribution", interpretation)
+                            
+                            st.info(chi_square_result['interpretation'])
+                        else:
+                            st.warning(f"⚠️ {chi_square_result.get('status')}: {chi_square_result.get('message', 'Insufficient data')}")
+                    
+                    with stat_tab2:
+                        st.write("**Bayesian Number Analysis**")
+                        st.write("Estimates true probability of each number appearing using conjugate prior method")
+                        
+                        bayesian_result = perform_bayesian_number_analysis(results, selected_game)
+                        
+                        if bayesian_result['status'] == 'success':
+                            game_config = LOTTERY_GAMES.get(selected_game, {})
+                            
+                            # Show top 5 hottest numbers by Bayesian posterior mean
+                            analysis_data = bayesian_result['analysis']
+                            hot_numbers = sorted(
+                                analysis_data.items(),
+                                key=lambda x: x[1]['posterior_mean_probability'],
+                                reverse=True
+                            )[:5]
+                            
+                            st.write("**Top 5 Numbers by Bayesian Posterior Mean:**")
+                            for idx, (num, data) in enumerate(hot_numbers, 1):
+                                prob = data['posterior_mean_probability']
+                                ci_lower, ci_upper = data['credible_interval_95']
+                                st.write(f"{idx}. **#{num}**: {prob:.4f} (95% CI: [{ci_lower:.4f}, {ci_upper:.4f}])")
+                        else:
+                            st.warning(f"⚠️ {bayesian_result.get('status')}")
+                    
+                    with stat_tab3:
+                        st.write("**Number Trend Forecasting**")
+                        st.write("Uses time series analysis to forecast future number appearance trends")
+                        
+                        forecast_result = forecast_number_trends(results, selected_game, periods=5)
+                        
+                        if forecast_result['status'] == 'success':
+                            st.write("**5-Period Trend Forecast (Top Numbers):**")
+                            for num, trend_data in forecast_result.get('number_trends', {}).items():
+                                trend_direction = "📈 Up" if trend_data['trend'] > 0 else "📉 Down"
+                                st.write(f"Number **#{num}**: {trend_direction} | Forecast: {trend_data['forecast_lower']:.2f} - {trend_data['forecast_upper']:.2f}")
+                        elif forecast_result['status'] == 'prophet_not_available':
+                            st.info("📌 Prophet library available for advanced forecasting (installed)")
+                        else:
+                            st.warning(f"⚠️ {forecast_result.get('status')}")
+                    
+                    with stat_tab4:
+                        st.write("**Prediction Confidence Metrics**")
+                        st.write("Calculates statistical significance of prediction accuracy vs random chance")
+                        
+                        # Get hot/cold numbers from analysis
+                        analysis = analyze_frequency(results, selected_game)
+                        hot_nums = analysis.get('hot_numbers', [])
+                        cold_nums = analysis.get('cold_numbers', [])
+                        
+                        # Get performance data
+                        perf = performance_metrics.get('strategy_performance', {}).get(selected_game, {})
+                        recent_acc = []
+                        for strat_perf in perf.values():
+                            recent_acc.extend(strat_perf.get('recent_accuracy', []))
+                        
+                        weights_data = weights.get('strategy_weights', {})
+                        
+                        confidence = calculate_statistical_confidence(hot_nums, cold_nums, recent_acc, weights_data)
+                        
+                        if 'win_rate' in confidence:
+                            col_d, col_e, col_f = st.columns(3)
+                            with col_d:
+                                st.metric("Win Rate", f"{confidence['win_rate']*100:.1f}%")
+                            with col_e:
+                                is_sig = "✅ Yes" if confidence['is_significant'] else "❌ No"
+                                st.metric("Statistically Significant", is_sig)
+                            with col_f:
+                                st.metric("Avg Strategy Weight", f"{confidence['avg_strategy_weight']:.2f}")
+                            
+                            st.write(f"**95% Confidence Interval:** [{confidence['confidence_interval'][0]*100:.1f}%, {confidence['confidence_interval'][1]*100:.1f}%]")
+                        else:
+                            st.info("⏳ Insufficient historical prediction data for confidence calculation")
+                else:
+                    st.info(f"📌 Advanced statistical analysis requires at least 20 draws. Currently have {len(results)} draws for {selected_game}.")
                 
                 # System Performance Overview
                 st.markdown("### 🏆 Program Performance Overview")

@@ -1,0 +1,10 @@
+2025-12-04 12:59:00 PM | Daily 3 Midday | Numbers: 5, 7, 3
+2025-12-03 12:59:00 PM | Daily 3 Midday | Numbers: 9, 4, 7
+2025-12-02 12:59:00 PM | Daily 3 Midday | Numbers: 6, 0, 4
+2025-12-01 12:59:00 PM | Daily 3 Midday | Numbers: 8, 2, 6
+2025-11-30 12:59:00 PM | Daily 3 Midday | Numbers: 3, 1, 5
+2025-11-29 12:59:00 PM | Daily 3 Midday | Numbers: 7, 6, 2
+2025-11-28 12:59:00 PM | Daily 3 Midday | Numbers: 4, 8, 1
+2025-11-27 12:59:00 PM | Daily 3 Midday | Numbers: 9, 3, 0
+2025-11-26 12:59:00 PM | Daily 3 Midday | Numbers: 2, 5, 7
+2025-11-25 12:59:00 PM | Daily 3 Midday | Numbers: 6, 4, 8

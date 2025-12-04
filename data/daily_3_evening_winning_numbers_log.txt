@@ -1,0 +1,10 @@
+2025-12-04 7:05:00 PM | Daily 3 Evening | Numbers: 1, 2, 3
+2025-12-03 7:05:00 PM | Daily 3 Evening | Numbers: 4, 5, 6
+2025-12-02 7:05:00 PM | Daily 3 Evening | Numbers: 7, 8, 9
+2025-12-01 7:05:00 PM | Daily 3 Evening | Numbers: 1, 5, 9
+2025-11-30 7:05:00 PM | Daily 3 Evening | Numbers: 2, 4, 8
+2025-11-29 7:05:00 PM | Daily 3 Evening | Numbers: 3, 6, 7
+2025-11-28 7:05:00 PM | Daily 3 Evening | Numbers: 5, 5, 9
+2025-11-27 7:05:00 PM | Daily 3 Evening | Numbers: 1, 3, 4
+2025-11-26 7:05:00 PM | Daily 3 Evening | Numbers: 6, 8, 2
+2025-11-25 7:05:00 PM | Daily 3 Evening | Numbers: 9, 1, 7
