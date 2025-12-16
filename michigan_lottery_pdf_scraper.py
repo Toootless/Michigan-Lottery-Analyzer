@@ -208,9 +208,13 @@ class MichiganLotteryPDFScraper:
             
             # Jackpot amount patterns - looking for amounts after "Estimated Jackpot:"
             amount_patterns = [
+                r'\$\s*(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(?:Billion|B)',  # $1.25 Billion or $1 Billion
                 r'\$\s*(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(?:Million|M)',  # $445 Million or $445.5 Million
+                r'\$\s*(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(?:Thousand|K)',  # $500 Thousand or $500K
                 r'\$\s*(\d{1,3}(?:,\d{3})*)',  # $10,500,000 or $610,000
-                r'(\d{1,3}(?:,\d{3})*)\s*(?:Million|M)',  # 445 Million
+                r'(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(?:Billion|B)(?![A-Z])',  # 1.25 Billion
+                r'(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(?:Million|M)(?![A-Z])',  # 445 Million
+                r'(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(?:Thousand|K)(?![A-Z])',  # 500 Thousand
             ]
             
             for game_name, game_config in games.items():
@@ -240,13 +244,18 @@ class MichiganLotteryPDFScraper:
                                         amount_str = match.group(1).replace(',', '')
                                         amount = float(amount_str)
                                         
-                                        # Check if it's in millions
-                                        if 'million' in match.group(0).lower() or 'm' in match.group(0).lower():
+                                        # Check if it's in billions, millions, or thousands
+                                        match_text = match.group(0).lower()
+                                        if 'billion' in match_text or 'b' in match_text:
+                                            amount *= 1_000_000_000
+                                        elif 'million' in match_text or ('m' in match_text and 'billion' not in match_text):
                                             amount *= 1_000_000
+                                        elif 'thousand' in match_text or ('k' in match_text and 'billion' not in match_text and 'million' not in match_text):
+                                            amount *= 1_000
                                         
                                         # Validate amount is reasonable for lottery
                                         min_amount = 100_000 if game_name in ['Fantasy 5'] else 1_000_000
-                                        max_amount = 2_000_000 if game_name == 'Fantasy 5' else 2_000_000_000
+                                        max_amount = 2_000_000 if game_name == 'Fantasy 5' else 3_000_000_000  # Allow up to $3B for high Powerball jackpots
                                         if min_amount <= amount <= max_amount:
                                             formatted = f"${int(amount):,}"
                                             jackpots[game_name] = {
