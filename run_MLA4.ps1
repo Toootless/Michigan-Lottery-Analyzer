@@ -18,7 +18,8 @@ $workspaceRoot = Split-Path -Parent $PSCommandPath
 Set-Location $workspaceRoot
 
 $localPython = Join-Path $workspaceRoot ".conda\Scripts\python.exe"
-$condaExe     = (Get-Command conda -ErrorAction SilentlyContinue)?.Source
+$condaCmd = Get-Command conda -ErrorAction SilentlyContinue
+$condaExe = if ($condaCmd) { $condaCmd.Source } else { $null }
 $fallbackEnv  = "mla4-py311"
 
 if ($DryRun) { Write-Info "DryRun mode: will not execute Streamlit." }

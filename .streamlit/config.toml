@@ -1,24 +1,6 @@
-[server]
-# Run in windowed mode (set true if using remote headless server)
-headless = false
-# Bind explicitly to localhost for security; change to 0.0.0.0 if remote access needed
-address = "localhost"
-# Default MLA4 port; adjust via run_MLA4.ps1 -Port <n>
-port = 8506
-# Auto-reload on file save for rapid iteration
-runOnSave = true
-# Use polling on some network shares to avoid watchdog issues (commented by default)
-# fileWatcherType = "auto"
+[client]
+showErrorDetails = false
+toolbarMode = "viewer"
 
-[browser]
-# Force local browser open; disable usage stats
-serverAddress = "localhost"
-gatherUsageStats = false
-
-[theme]
-# Light base theme; switch to "dark" if preferred
-base = "light"
-primaryColor = "#104e8b"
-backgroundColor = "#ffffff"
-secondaryBackgroundColor = "#f5f7fa"
-textColor = "#222222"
+[logger]
+level = "error"
